@@ -3,7 +3,7 @@ import axios from "axios";
 
 // Normalize base URL (remove trailing slash)
 const BASE = import.meta.env.VITE_API_BASE_URL.replace(/\/+$/, "");
-
+console.log("API BASE URL:", import.meta.env.VITE_API_BASE_URL);
 // Create Axios instance
 const api = axios.create({
   baseURL: BASE, // SAFE ✔
